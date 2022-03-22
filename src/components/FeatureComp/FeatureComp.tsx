@@ -124,6 +124,9 @@ const FlexContainer = styled.div`
 	width: 90%;
 	background: #f2f2f2;
 	margin-bottom: 2.5rem;
+	img {
+		width: 100%;
+	}
 	.awsometeacher_content {
 		color: #038c33;
 		h4 {
