@@ -66,8 +66,13 @@ const Topnav = styled.header`
 		.top_nav_btn_container {
 			.top_nav_link {
 				margin-right: 1rem;
+				padding: 1rem;
 				text-decoration: none;
 				color: #038c33;
+				&:hover {
+					background: #e5e5e5;
+					border-radius: 5px;
+				}
 			}
 			.btn_green {
 				background: #038c33;
