@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 import logo from "../assets/dinnerlogo.png";
-// import Vector10 from "../components/images/Vector (10).png";
-// import Vector11 from "../components/images/Vector (11).png";
-// import Vector12 from "../components/images/Vector (12).png";
+import Vector10 from "../assets/Vector(10).png";
+import Vector11 from "../assets/Vector(11).png";
+import Vector12 from "../assets/Vector(12).png";
 
 const FooterComp = () => {
 	return (
@@ -43,7 +43,6 @@ const FooterComp = () => {
 
 					<div className="foot2">
 						<h4>
-							{" "}
 							<span className="line">News</span>letter
 						</h4>
 						<p className="news">
@@ -56,15 +55,19 @@ const FooterComp = () => {
 						<div className="socials">
 							<div>
 								{" "}
-								<a href="">{/* <img src={Vector10} alt="" /> */}</a>
+								<a href="">
+									<img src={Vector10} alt="" />
+								</a>
 							</div>
 							<div className="space">
-								{" "}
-								<a href="">{/* <img src={Vector11} alt="" /> */}</a>
+								<a href="">
+									<img src={Vector11} alt="" />
+								</a>
 							</div>
 							<div>
-								{" "}
-								<a href=""> {/* <img src={Vector12} alt="" /> */}</a>
+								<a href="">
+									<img src={Vector12} alt="" />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -72,7 +75,7 @@ const FooterComp = () => {
 				<div className="underline"></div>
 				<div className="align">
 					<p>
-						Copywrite @ DinnyGreen International Technology
+						Copywrite @ DinnyGreen International Schools
 						{new Date().getFullYear()}
 					</p>
 				</div>
@@ -99,7 +102,6 @@ const Footer = styled.footer`
 			}
 			p,
 			li {
-				padding: 6% 0;
 				font-size: 0.9rem;
 				color: #f2f2f2;
 				line-height: 1.5;
@@ -111,7 +113,6 @@ const Footer = styled.footer`
 				font-size: 1.5rem;
 			}
 			.foot1 {
-				padding-top: 6%;
 				li {
 					gap: 1.7rem;
 					font-size: 0.9rem;
@@ -130,11 +131,6 @@ const Footer = styled.footer`
 					padding-bottom: 0.6rem;
 					list-style: none;
 				}
-
-				.news {
-					padding-bottom: 5%;
-				}
-
 				input {
 					padding: 4% 10%;
 					outline: none;
