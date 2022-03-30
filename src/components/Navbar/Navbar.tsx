@@ -74,7 +74,6 @@ const Nav = styled.nav`
 
 	.list {
 		list-style-type: none;
-		height: 100%;
 		display: flex;
 		gap: 3rem;
 		justify-content: space-evenly;
