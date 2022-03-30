@@ -6,34 +6,32 @@ import styled from "styled-components";
 
 const UniqueComps = () => {
 	return (
-		
-			<UniqueContainer>
-				<img src={Blur} alt="dinner-green-logo" />
-				<Container>
-					<UniqueContent>
-						<div className="Content-wrapper">
-							<h1>
-								Give Your Child A <br />
-								Chance To Be Unique
-							</h1>
-							<p>
-								Experts agree that a child’s personality doesn’t fully form
-								<br />
-								until they are in elementary school. <br />
-								<a href="#" className="sign-in">
-									Sign-in
-								</a>
-								to enroll your child
-							</p>
-							<ButtonContainer>
-								<GreenButton>Sign-up</GreenButton>
-								<LGButton>Learn more</LGButton>
-							</ButtonContainer>
-						</div>
-					</UniqueContent>
-				</Container>
-			</UniqueContainer>
-	
+		<UniqueContainer>
+			<img src={Blur} alt="dinner-green-logo" />
+			<Container>
+				<UniqueContent>
+					<div className="Content-wrapper">
+						<h1>
+							Give Your Child A <br />
+							Chance To Be Unique
+						</h1>
+						<p>
+							Experts agree that a child’s personality doesn’t fully form
+							<br />
+							until they are in elementary school. <br />
+							<a href="#" className="sign-in">
+								Sign-in
+							</a>
+							to enroll your child
+						</p>
+						<ButtonContainer>
+							<GreenButton>Sign-up</GreenButton>
+							<LGButton>Learn more</LGButton>
+						</ButtonContainer>
+					</div>
+				</UniqueContent>
+			</Container>
+		</UniqueContainer>
 	);
 };
 
@@ -42,7 +40,8 @@ export default UniqueComps;
 const UniqueContainer = styled.div`
 	background: url(${bgimg}) no-repeat center center/cover;
 	background-position: right;
-	padding: 2rem;
+	height: 70vh;
+	padding: 1rem;
 	position: relative;
 	img {
 		position: absolute;
@@ -53,17 +52,17 @@ const UniqueContainer = styled.div`
 	}
 `;
 const Container = styled.div`
-	max-width: 1400px;
+	// max-width: 1400px;
+	width: 100%;
 	margin: 0 auto;
-	padding: 1rem;
-	overflow: hidden;
 `;
 const UniqueContent = styled.div`
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	margin-top: 2rem;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
+	@media screen and (max-width: 450px) {
+		margin-top: 5rem;
+	}
 	.Content-wrapper {
 		margin-left: 5rem;
 		line-height: 1.2;
@@ -93,6 +92,14 @@ const UniqueContent = styled.div`
 				font-size: 2.5rem;
 			}
 		}
+		@media screen and (max-width: 450px) {
+			h1 {
+				font-size: 1.6rem;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
 	}
 `;
 const ButtonContainer = styled.div`
@@ -112,6 +119,10 @@ const GreenButton = styled.button`
 		background: #02a63b;
 		transition: ease-in;
 	}
+	@media screen and (max-width: 450px) {
+		padding: 0.5rem 1rem;
+		font-size: 0.7rem;
+	}
 `;
 const LGButton = styled.button`
 	background: #add9bd;
@@ -126,5 +137,9 @@ const LGButton = styled.button`
 	&:hover {
 		background: #b6fccf;
 		transition: ease-in;
+	}
+	@media screen and (max-width: 450px) {
+		padding: 0.5rem 1rem;
+		font-size: 0.7rem;
 	}
 `;

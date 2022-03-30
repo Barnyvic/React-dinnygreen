@@ -3,7 +3,7 @@ import styled from "styled-components";
 import man from "../../assets/man.jpeg";
 import woman from "../../assets/woman.jpeg";
 import red from "../../assets/redcloud.jpeg";
-import {BsCalendarDate} from "react-icons/bs"
+import { BsCalendarDate } from "react-icons/bs";
 
 const InstructionComp = () => {
 	return (
@@ -68,7 +68,6 @@ const Container = styled.div`
 `;
 
 const InstructionContent = styled.div`
-	padding: 3rem;
 	h1 {
 		text-align: center;
 		color: #038c33;
@@ -82,9 +81,9 @@ const InstructionContent = styled.div`
 		line-height: 2rem;
 		font-size: 1.2rem;
 	}
-  .btnCOnt{
-    text-align: center;
-  }
+	.btnCOnt {
+		text-align: center;
+	}
 `;
 
 const Instructionimg = styled.div`
@@ -103,8 +102,8 @@ const Instructionimg = styled.div`
 const Imgdiv = styled.div`
 	background: url(${woman}) no-repeat center center/cover;
 	height: 50vh;
-  width: 100%;
-  border-radius:5px;
+	width: 100%;
+	border-radius: 5px;
 	position: relative;
 	.Overlay {
 		position: absolute;
@@ -122,8 +121,8 @@ const Imgdiv = styled.div`
 			position: absolute;
 			top: 17%;
 			left: 5%;
-      outline: none;
-      border:none;
+			outline: none;
+			border: none;
 			padding: 0.5rem 1.5rem;
 			background-color: #add9bd;
 			border-radius: 3.4px;
@@ -245,7 +244,6 @@ const Imgdiv2 = styled.div`
 `;
 
 const GreenButton = styled.button`
-
 	background: #038c33;
 	color: #ffffff;
 	border: none;

@@ -46,14 +46,13 @@ const LearningComp = () => {
 export default LearningComp;
 
 const LearningContainer = styled.div`
-background:#ffffff;
+	background: #ffffff;
 `;
 
 const Container = styled.div`
 	max-width: 1400px;
 	margin: 0 auto;
 	padding: 3rem;
-	overflow: hidden;
 	display: flex;
 	flex-direction: row;
 	@media screen and (max-width: 1300px) {
@@ -62,7 +61,6 @@ const Container = styled.div`
 `;
 
 const LearningContent = styled.div`
-	padding: 5rem;
 	color: #038c33;
 	h1 {
 		font-size: 2.5rem;
@@ -144,7 +142,7 @@ const Learningimg = styled.div`
 		position: absolute;
 		right: 0%;
 		margin-top: 6%;
-		width:40%;
+		width: 40%;
 	}
 	@media screen and (max-width: 1300px) {
 		display: none;

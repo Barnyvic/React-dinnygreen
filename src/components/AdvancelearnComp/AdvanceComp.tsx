@@ -57,10 +57,8 @@ const AdvanceContainer = styled.div`
 	background: #ffffff;
 `;
 const Container = styled.div`
-	max-width: 1400px;
 	margin: 0 auto;
 	padding: 3rem;
-	overflow: hidden;
 	display: grid;
 	justify-content: space-evenly;
 	align-items: center;
@@ -131,7 +129,7 @@ const RateCont = styled.div`
 	}
 	@media screen and (max-width: 1300px) {
 		.Active_courses {
-			margin-right:1rem;
+			margin-right: 1rem;
 			.sup {
 				font-size: 2rem;
 			}
@@ -151,9 +149,11 @@ const RateCont = styled.div`
 
 const AdvanceImgCont = styled.div`
 	padding: 1rem;
+
 	.AdvanceImg {
-		@media screen and (max-width: 1300px) {
-	
+		width: 80%;
+		@media screen and (max-width: 450px) {
+			width: 100%;
 		}
 	}
 `;

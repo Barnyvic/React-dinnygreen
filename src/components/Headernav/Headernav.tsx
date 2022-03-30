@@ -31,7 +31,6 @@ export default Headernav;
 
 const Topnav = styled.header`
 	width: 100%;
-	height: 10vh;
 	max-width: 100%;
 	padding: 1rem;
 	background: #ffffff;
@@ -39,7 +38,6 @@ const Topnav = styled.header`
 		max-width: 1400px;
 		margin: 0 auto;
 		padding: 0 2rem;
-		overflow: hidden;
 		font-size: 1.2rem;
 		.header__contact-info {
 			display: flex;
@@ -90,7 +88,7 @@ const Topnav = styled.header`
 			}
 		}
 		@media (max-width: 850px) {
-			font-size: 1rem;
+			font-size: 0.7rem;
 			.top_nav_btn_container {
 				.btn_green {
 					font-size: 1rem;
@@ -111,20 +109,9 @@ const Topnav = styled.header`
 			}
 		}
 		@media (max-width: 575px) {
-			padding: 0rem;
-			.header__contact-info {
-				margin-right: 1.5rem;
-			}
+			font-size: 0.6rem;
 			.top_nav_btn_container {
-				padding: 0rem 0.9rem;
-				.top_nav_link {
-					font-size: 0.8rem;
-					margin-left: 1rem;
-				}
-				.btn_green {
-					font-size: 0.7rem;
-					padding: 0.5rem 0.8rem;
-				}
+				display: none;
 			}
 		}
 	}

@@ -8,9 +8,6 @@ import SliderCards from "../components/Slider";
 import StudentComp from "../components/StudentComp/StudentComp";
 import SuccessComp from "../components/SuccessComp/SuccessComp";
 import UniqueComps from "../components/Uniquesection/UniqueComp";
- 
-
-
 
 const HomePage = () => {
 	return (
@@ -19,11 +16,11 @@ const HomePage = () => {
 			<Advancelearn />
 			<FeatureComp />
 			<LearningComp />
-			<SliderCards />
+			{/* <SliderCards /> */}
 			<StudentComp />
 			<SuccessComp />
 			<InstructionComp />
-			<ContactComp/>
+			<ContactComp />
 		</div>
 	);
 };

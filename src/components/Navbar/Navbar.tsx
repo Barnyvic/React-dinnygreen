@@ -53,7 +53,9 @@ const Navbar = () => {
 						<Greenbutton>Contact</Greenbutton>
 					</ul>
 				)}
-				<FaStream className="btn" onClick={toggleNav} />
+				<div>
+					<FaStream className="btn" onClick={toggleNav} />
+				</div>
 			</Container>
 		</Nav>
 	);
@@ -93,12 +95,10 @@ const Nav = styled.nav`
 	}
 	.btn {
 		display: none;
-		position: absolute;
-		right: 10px;
-		top: 7px;
 		padding: 5px;
 		color: #000;
-		font-size: 18px;
+		margin-bottom: 2rem;
+		font-size: 0.7rem;
 	}
 	@media screen and (max-width: 1300px) {
 		.list {
@@ -124,16 +124,15 @@ const Nav = styled.nav`
 			margin-top: 2rem;
 			font-size: 2.5rem;
 			color: #ffffff;
-			margin-right: 5rem;
+			// margin-right: 5rem;
 		}
 	}
 `;
 const Logoimg = styled.div`
-	margin-left: 3rem;
 	flex: 1;
-	width: 50%;
+	// width: 50%;
 	img {
-		width: 30%;
+		width: 120px;
 	}
 	@media screen and (max-width: 1300px) {
 		img {
@@ -142,15 +141,13 @@ const Logoimg = styled.div`
 	}
 	@media screen and (max-width: 850px) {
 		img {
-			width: 100px;
+			width: 70px;
 		}
 	}
 `;
 const Container = styled.div`
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 0.7rem;
-	overflow: hidden;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;

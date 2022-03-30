@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import frame15 from "../../assets/Frame15.png"
+import frame15 from "../../assets/Frame15.png";
 
 const StudentComp = () => {
 	return (
@@ -18,7 +18,6 @@ const StudentComp = () => {
 					</p>
 					<img src={frame15} alt="A girl reading" />
 				</StudentContent>
-			
 			</Container>
 		</StudentContainer>
 	);
@@ -30,7 +29,7 @@ const StudentContainer = styled.div``;
 
 const StudentContent = styled.div`
 	text-align: center;
-	padding: 4rem;
+	padding: 2rem;
 	h1 {
 		color: #038c33;
 		margin-bottom: 1rem;
@@ -40,13 +39,10 @@ const StudentContent = styled.div`
 		font-size: 1.1rem;
 		color: #6c757d;
 	}
-  img{
-    width: 100%;
-  }
+	img {
+		width: 100%;
+	}
 `;
-
-
- 
 
 const Container = styled.div`
 	max-width: 1400px;

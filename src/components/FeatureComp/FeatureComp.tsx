@@ -131,10 +131,17 @@ const FlexContainer = styled.div`
 		color: #038c33;
 		h4 {
 			font-size: 1.2rem;
-			font-weight: 500;
+			font-weight: 550;
+			@media screen and (max-width: 450px) {
+				font-size: 1rem;
+			}
 		}
 		p {
 			font-size: 1.1rem;
+			color: gray;
+			@media screen and (max-width: 450px) {
+				font-size: 0.8rem;
+			}
 		}
 	}
 `;

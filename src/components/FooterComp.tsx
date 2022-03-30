@@ -93,12 +93,15 @@ const Footer = styled.footer`
 			max-width: 1400px;
 			margin: 0 auto;
 			padding: 4rem;
-			overflow: hidden;
 			display: grid;
 			align-items: center;
 			grid-template-columns: repeat(4, 1fr);
 			@media screen and (max-width: 1000px) {
 				grid-template-columns: repeat(2, 1fr);
+			}
+			@media screen and (max-width: 400px) {
+				max-width: 2000px;
+				padding: 2rem;
 			}
 			p,
 			li {
