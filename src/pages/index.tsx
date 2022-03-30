@@ -16,7 +16,7 @@ const HomePage = () => {
 			<Advancelearn />
 			<FeatureComp />
 			<LearningComp />
-			{/* <SliderCards /> */}
+			<SliderCards />
 			<StudentComp />
 			<SuccessComp />
 			<InstructionComp />

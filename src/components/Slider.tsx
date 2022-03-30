@@ -103,8 +103,6 @@ export default class SliderCards extends Component {
 const Container = styled.div`
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 1rem;
-	overflow: hidden;
 	div {
 		text-align: center;
 	}
@@ -175,10 +173,14 @@ const MapContainer = styled.div`
 					margin-left: 3rem;
 			}
 				@media screen and (max-width: 900px){
-					margin-left: 1rem;
+					margin-left: 2.5rem;
 			}
 				@media screen and (max-width: 800px){
-					margin-left: 5rem;
+					margin-left: 10rem;
+			}
+				@media screen and (max-width: 450px){
+				margin-left: 1rem;
+					width:80%;
 			}
 	}
 	h5 {
@@ -204,5 +206,9 @@ const GreenButton = styled.button`
 	&:hover {
 		background: #02a63b;
 		transition: ease-in;
+	}
+	@media screen and (max-width: 450px) {
+		padding: 0.7rem 1rem;
+		font-size: 0.9rem;
 	}
 `;
