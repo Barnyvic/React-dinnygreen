@@ -27,7 +27,7 @@ export default ContactComp;
 
 const ContactContainer = styled.div`
 	padding: 1rem;
-	background:#ffffff;
+	background: #ffffff;
 `;
 
 const ContactContent = styled.div`
@@ -54,10 +54,10 @@ const ContactGrid = styled.div`
 	display: grid;
 	padding-top: 3.5rem;
 	gap: 2rem;
-	input{
-		padding:1rem;
+	input {
+		padding: 1rem;
 		width: 100%;
-		outline:none;
+		outline: none;
 	}
 `;
 

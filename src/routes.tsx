@@ -18,7 +18,7 @@ const RouterComp = () => {
 						<Route path="/contact" element={<ContactPage />} />
 					</Routes>
 				</div>
-				{/* <FooterComp /> */}
+				<FooterComp />
 			</Router>
 		</Wrapper>
 	);
